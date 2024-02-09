@@ -1,1 +1,31 @@
-<p>mariam works!</p>
+
+<div class="container m-3">
+    <div class="row">
+        <div  class="col-4">
+            <!-- sidebar -->
+        </div>
+        <div class="col-8 ">
+            <table class="table table-dark table-striped rounded table-hover">
+                <thead>
+                    <tr class="table-secondary">
+                        <td>NAME</td>
+                        <td>EMAIL</td>
+                        <td>PHONE</td>
+                        <td>ADDRESS</td>
+                    </tr>
+                </thead>
+                <tbody>
+                @for (customer of Customers; track customer.id) {
+                        <tr class="table">
+                            <td >{{customer.name}}</td>
+                            <td >{{customer.email}}</td>
+                            <td >{{customer.phone}}</td>
+                            <td >{{customer.address}}</td>
+                        </tr>
+               }
+                </tbody>    
+            </table>
+        </div>
+    </div>
+</div>
+  

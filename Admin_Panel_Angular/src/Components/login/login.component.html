@@ -1,0 +1,37 @@
+
+
+    <div class="container-fluid bg-light w-75 rounded ">
+      <form [formGroup]="myRegValid" class="row justify-content-center align-items-center">
+          <div class="col-5">
+            <p class="text-center light-text fw-bold fs-1">Login Form</p>
+          
+         
+          <div  class="form-group mb-3 primary-text">
+                <label  for="exampleInputEmail1">Email address:</label>
+                <input formControlName="email" #email type="email" class="form-control p-2" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                @if (myRegValid.controls["email"].valid==false) {
+                <div style="font-style: italic;">
+                    <small id="emailHelp" class="form-text text-danger ">the email must be like "example&#64;email.com"</small>
+                </div>} 
+          </div>
+          <div  class="form-group mb-3 primary-text">
+                <label for="exampleInputpassword">password:</label>
+                <input formControlName="password" #password type="password" class="form-control p-2" id="exampleInputpassword" aria-describedby="passwordHelp" placeholder="Enter password">
+                @if (myRegValid.controls["password"].valid==false) {
+                <div style="font-style: italic;">
+                    <small id="passwordHelp" class="form-text text-danger">must contain at least 1 uppercase char, 1 lowerercase char ,1 digit ,1 special character with a minimum length of 12 characters. </small>
+                </div>} 
+          </div>
+ 
+          <div  class="text-center m-2 primary-text">
+                @if( emailValid && passwordValid){
+                <input  (click)="AddCustomer(  email.value, password.value)" class="m-2 w-50 btn btn-primary p-2" type="button" value="ADD" >
+                }@else {
+                <input  (click)="AddCustomer( email.value, password.value)" class="m-2 w-50 btn btn-primary p-2" type="button" disabled value="ADD" >
+                } 
+          </div>
+        </div>
+        </form>
+      </div> 
+   
+  

@@ -1,0 +1,44 @@
+{
+  "customers": [
+    {
+      "name": "Batot",
+      "email": "batot@gmail.com",
+      "phone": "123456789",
+      "address": "123-ST",
+      "id": "1"
+    },
+    {
+      "name": "momen",
+      "email": "momen@gmail.com",
+      "phone": "0111557666",
+      "address": "456-ST",
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "name": "mohamed",
+      "email": "mohamed@gmail.com",
+      "address": "789-ST",
+      "phone": "0121217471"
+    },
+    {
+      "id": "4",
+      "name": "mariam",
+      "email": "ma45@gmail.com",
+      "address": "101-ST",
+      "phone": "01112797471"
+    },
+    {
+      "id": "5",
+      "name": "mahmoud",
+      "email": "mahmoud@gmail.com",
+      "address": "112-ST",
+      "phone": "01112797471"
+    },
+    {
+      "id": "e9da",
+      "email": "mariam45@gmail.com",
+      "password": "A1a*12347"
+    }
+  ]
+}
